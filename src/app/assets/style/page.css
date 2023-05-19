@@ -1,0 +1,67 @@
+.header {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+.line1 {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  justify-content: space-between;
+}
+.line2 {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 999;
+}
+.position-op {
+  padding: 10%;
+}
+.position-op:hover {
+  padding: 10%;
+  background: rgba(197, 197, 197, 0.5);
+}
+
+.body {
+  background: #fff;
+  margin: 5% 10%;
+  width: 80%;
+  height: calc(75vh - 4rem);
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.booking-header {
+  background: #1e2363;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2px;
+}
+.header-type {
+  text-align: right;
+  padding: 1rem 2rem;
+  height: 50%;
+  width: 20%;
+  background: #ffffff3f;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.booking-body {
+  display: flex;
+}
+
+.time-body {
+  width: 40%;
+  padding: 0 2rem;
+}
+
+.room-body {
+  padding: 0 2rem;
+  width: 60%;
+}
