@@ -38,7 +38,7 @@ export default function Home() {
             }}
           />
         </div>
-        <div className={`line2 `}>
+        <div className={`line2 ${showMenu ? 'show' : ''}`}>
           <div className='position-op' onClick={() => handlePageChange('user')}>
             User
           </div>

@@ -15,6 +15,10 @@
   width: 20%;
   background: rgba(255, 255, 255, 0.5);
   z-index: 999;
+  display: none;
+}
+.show {
+  display: block;
 }
 .position-op {
   padding: 10%;
@@ -70,4 +74,33 @@
 .room-body {
   padding: 0 2rem;
   width: 60%;
+}
+
+.room-box {
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.select-box {
+  width: 100%;
+  aspect-ratio: 2/1;
+  background: #1e2363;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.select {
+  background: #1e6340;
+}
+
+.detail-header {
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
