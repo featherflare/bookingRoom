@@ -50,17 +50,18 @@ export default function TimePicker({ setTime }) {
   }, [hour, hour2]);
 
   return (
-    <div class='card-time'>
-      <div class='card-time2'>
-        <div class='card-time-picker-text'>Start</div>
-        <div class='card-time-picker-values'>
-          <div class='card-time-picker-select'>
-            <div class='card-time-picker-scroll'>
+    <div className='card-time'>
+      <div className='card-time2'>
+        <div className='card-time-picker-text'>Start</div>
+        <div className='card-time-picker-values'>
+          <div className='card-time-picker-select'>
+            <div className='card-time-picker-scroll'>
               <Repeat numTimes={23}>
                 {(i) => (
                   <div
                     id={i}
-                    class='card-time-picker-option first'
+                    key={i}
+                    className='card-time-picker-option first'
                     onClick={(e) => first(e)}
                   >
                     {i}
@@ -69,19 +70,20 @@ export default function TimePicker({ setTime }) {
               </Repeat>
             </div>
           </div>
-          <div class='card-time-picker-option'>&nbsp;: 00</div>
+          <div className='card-time-picker-option'>&nbsp;: 00</div>
         </div>
       </div>
-      <div class='card-time2'>
-        <div class='card-time-picker-text'>To</div>
-        <div class='card-time-picker-values'>
-          <div class='card-time-picker-select'>
-            <div class='card-time-picker-scroll'>
+      <div className='card-time2'>
+        <div className='card-time-picker-text'>To</div>
+        <div className='card-time-picker-values'>
+          <div className='card-time-picker-select'>
+            <div className='card-time-picker-scroll'>
               <Repeat numTimes={23}>
                 {(i) => (
                   <div
                     id={i + 23}
-                    class='card-time-picker-option back'
+                    key={i + 23}
+                    className='card-time-picker-option back'
                     onClick={(e) => back(e)}
                   >
                     {i}
@@ -90,7 +92,7 @@ export default function TimePicker({ setTime }) {
               </Repeat>
             </div>
           </div>
-          <div class='card-time-picker-option'>&nbsp;: 00</div>
+          <div className='card-time-picker-option'>&nbsp;: 00</div>
         </div>
       </div>
     </div>
